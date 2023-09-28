@@ -6,13 +6,29 @@ body {
     padding: 0;
 }
 h1 {
+    font-size: 45px;
     color: #00594c;
 }
 p {
     font-size: 18px;
     color: #333;
 }
-li{
+.paragraf {
+    text-align: left; 
+    margin-left: 10px;
+}
+.alinea {
+    text-align: left; 
+    margin-left: 10px; 
+    text-indent: 40px;
+}
+ul {
+    text-align: left;
+}
+ol {
+    text-align: left;
+}
+li {
     font-size: 18px;
     color: #333;
 }
@@ -21,10 +37,11 @@ a {
     color: #0077b6;
 }
 img {
+    width: 600px;
     max-width: 100%;
     height: auto;
 }
-.button{
+.button {
     background-color: aquamarine;
     color: black;
 }
