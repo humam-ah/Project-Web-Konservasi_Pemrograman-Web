@@ -7,15 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Konservasi Lingkungan</h1>
-        <center>
-            <img src="img/Konservasi.jpg" alt="Konservasi Sumber Daya Alam">
-        </center>
+    <header class="fixed w-full flex">
+        <div class="judul">
+            <h1>Konservasi Lingkungan</h1>
+        </div>
+        <nav class="navigasi right">
+            <a href="home.html">Home</a>
+            <a href="faq.html">FAQ</a>
     </header>
 
-    <main>
-        <section>
+    <main>  
+        <section style="padding-top: 144px;">
+            <center>
+                <img src="img/Konservasi.jpg" alt="Konservasi Sumber Daya Alam">
+            </center>
             <h2>Konservasi Adalah Upaya Perlindungan</h2>
             <p class="alinea">
                 Konservasi memiliki arti sempit perlindungan. Istilah “konservasi” berasal dari kata <i>conservation</i> yang mengandung makna kata <i>con- (together)</i> dan <i>servare (keep/save)</i> yang memiliki pengertian mengenai upaya memelihara apa yang kita punya <i>(keep/save what you have)</i> dengan bijaksana <i>(wise use)</i>.
@@ -131,7 +136,22 @@
 
         <section>
             <img src="img/Bersih-bersih.png">
-        </section>
+        </section><br>
+
+        <section>
+            <h2>Ulasan</h2>
+            <p>Tuliskan kritik, saran, ide, ataupun pertanyaan Anda untuk mendukung konservasi lingkungan.</p>
+    
+            <form action="proses_konservasi.php" method="POST">
+                <label for="nama">Nama Anda:</label>
+                <input type="text" id="nama" name="nama"><br>
+                <input type="checkbox" id="anonymous" name="anonymous">
+                <label for="anonymous">atur sebagai anonim</label><br><br>
+                <label for="saran"> Komentar Anda:</label><br>
+                <textarea id="saran" name="saran" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Unggah">
+            </form>
+        </section><br>
     </main>
 
     <footer>

@@ -5,6 +5,12 @@ body {
     margin: 0;
     padding: 0;
 }
+footer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #c9e4c5;
+    padding: 4px;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
+}
 h1 {
     font-size: 45px;
     color: #00594c;
@@ -42,6 +48,51 @@ img {
     height: auto;
 }
 .button {
-    background-color: aquamarine;
+    background-color: rgb(226, 248, 241);
     color: black;
+}
+table, td, th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    height: auto;
+    text-align: center;
+    padding: 5px;
+}
+th{
+    background-color: #a1c49c;
+}
+td{
+    text-align: left;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c9e4c5;
+    color: #00594c;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.judul {
+    font-size: 24px;
+}
+.navigasi {
+    display: flex;
+}
+.navigasi a {
+    color: #00594c;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.fixed{
+    position: fixed;
+}
+.w-full{
+    width: 100%;
+}
+.flex{
+    display: flex;
+}
+.right{
+    padding-right: 32px;
 }

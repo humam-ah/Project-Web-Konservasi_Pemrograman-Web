@@ -7,42 +7,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Konservasi Lingkungan</h1>
-        <center>
-            <img src="img/Konservasi.jpg" alt="Konservasi Sumber Daya Alam">
-        </center>
+    <header class="fixed w-full flex">
+        <div class="judul">
+            <h1>Konservasi Lingkungan</h1>
+        </div>
+        <nav class="navigasi right">
+            <a href="home.html">Home</a>
+            <a href="faq.html">FAQ</a>
     </header>
 
     <main>
-        <section>
+        <section style="padding-top: 144px;">
+            <center>
+                <img src="img/Konservasi.jpg" alt="Konservasi Sumber Daya Alam">
+            </center>
             <h2>FAQ</h2>
-            <ul>
-                <h3>
-                    <li>Apa itu Konservasi?</li>
-                </h3>
-                <p>
-                    Konservasi adalah upaya memanfaatkan dan memelihara sumber daya yang kita miliki dengan bijaksana sehingga dapat terus dimanfaatkan dan berlanjut hingga masa mendatang.
-                </p>
-                <h3>
-                    <li>Apa Manfaat Konservasi?</li>
-                </h3>
-                <p>
-                    Konservasi memiliki manfaat dari segi ekologi dan ekonomi. Secara ekologi, salah satu manfaat konservasi adalah menjaga keberlanjutan sumber daya berupa flora dan fauna saat ini hingga masa mendatang.
-
-                </p>
-            </ul>
+            <table style="width: 750px;" align="center">
+                <tr>
+                    <td></td>
+                    <th>Question</th>
+                    <th>Answer</th>
+                </tr>
+                <tr>
+                    <th>1. </th>
+                    <td>Apa itu Konservasi?</td>
+                    <td>Konservasi adalah upaya memanfaatkan dan memelihara sumber daya yang kita miliki dengan bijaksana sehingga dapat terus dimanfaatkan dan berlanjut hingga masa mendatang.</td>
+                </tr>
+                <tr>
+                    <th>2.</th>
+                    <td>Apa Manfaat Konservasi?</td>
+                    <td>Konservasi memiliki manfaat dari segi ekologi dan ekonomi. Secara ekologi, salah satu manfaat konservasi adalah menjaga keberlanjutan sumber daya berupa flora dan fauna saat ini hingga masa mendatang.</td>
+                </tr>
+                <tr>
+                    <th>3.</th>
+                    <td>Apa saja Jenis Konservasi?</td>
+                    <td>Konservasi memiliki 2 jenis yaitu <strong>Konservasi <i>In Situ</i></strong> dan <strong>Konservasi<i> Ex Situ</i></strong>.</td>
+                </tr>
+            </table><br>
         </section>
 
         <section>
-            <a href="Index.html">
-                <center>
-                    <button type="button" class="button">
-                    Kembali
-                    </button>
-                </center>
-            </a>
-        </section>
+            <h2>Ulasan</h2>
+            <p>Tuliskan kritik, saran, ide, ataupun pertanyaan Anda untuk mendukung konservasi lingkungan.</p>
+    
+            <form action="proses_konservasi.php" method="POST">
+                <label for="nama">Nama Anda:</label>
+                <input type="text" id="nama" name="nama"><br>
+                <input type="checkbox" id="anonymous" name="anonymous">
+                <label for="anonymous">atur sebagai anonim</label><br><br>
+                <label for="saran"> Komentar Anda:</label><br>
+                <textarea id="saran" name="saran" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Unggah">
+            </form>
+        </section><br>
     </main>
     
     <footer>
