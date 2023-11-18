@@ -72,6 +72,7 @@ header {
     color: #00594c;
     padding: 10px 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 .judul {
     font-size: 24px;
@@ -95,4 +96,32 @@ header {
 }
 .right{
     padding-right: 32px;
+}
+#slideshow-container {
+    max-width: 600px;
+    height: 350px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.mySlides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color:#00594c;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }

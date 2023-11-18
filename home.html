@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas 1 HTML Tema Lingkungan</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
+    <script src="src/script.js"></script>
+    
     <header class="fixed w-full flex">
         <div class="judul">
             <h1>Konservasi Lingkungan</h1>
@@ -132,11 +134,28 @@
             <p>
                 Untuk informasi lebih lanjut tentang konservasi lingkungan, Silahkan kunjungi referensi yang saya gunakan<a href="https://lindungihutan.com/blog/konservasi-adalah/#rb-konservasi-adalah-upaya-perlindungan"> di sini.</a>
             </p>
-        </section>
-
-        <section>
-            <img src="img/Bersih-bersih.png">
         </section><br>
+
+        <div id="slideshow-container">
+            <div class="mySlides">
+                <img src="img/slide1.png" style="width:100%">
+            </div>
+    
+            <div class="mySlides">
+                <img src="img/slide2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/slide3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/slide4.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="gantiSlide(-1)">&#10094;</a>
+            <a class="next" onclick="gantiSlide(1)">&#10095;</a>
+        </div><br>
 
         <section>
             <h2>Ulasan</h2>
